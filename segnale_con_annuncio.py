@@ -17,7 +17,7 @@ impulse_frequency = 1000
 segment_52_53 = np.concatenate([
     np.concatenate([generate_tone(frequencies[0], tone_duration_ms, sample_rate),
                     generate_tone(frequencies[1], tone_duration_ms, sample_rate)])
-    for _ in range(17)
+    for _ in range(16)
 ])
 
 impulses = np.concatenate([
@@ -39,24 +39,24 @@ minute = current_time.minute
 
 if hour == 0:
     if minute == 0:
-        time_message = "È mezzanotte?"
+        time_message = "È mezzanotte"
     elif minute == 1:
-        time_message = "È mezzanotte, e un minuto?"
+        time_message = "È mezzanotte, e un minuto"
     else:
-        time_message = f"È mezzanotte, e {minute} minuti?"
+        time_message = f"È mezzanotte, e {minute} minuti"
 elif hour == 1:
     if minute == 0:
         time_message = "È l'una?"
     elif minute == 1:
-        time_message = "Sono le ore una, e un minuto?"
+        time_message = "Ore una, e un minuto"
     else:
-        time_message = f"Sono le ore una, e {minute} minuti?"
+        time_message = f"Ore una, e {minute} minuti"
 elif minute == 0:
-    time_message = f"Sono le ore {hour}?"
+    time_message = f"Ore {hour}?"
 elif minute == 1:
-    time_message = f"Sono le ore {hour}, e un minuto?"
+    time_message = f"Ore {hour}, e un minuto"
 else:
-    time_message = f"Sono le ore {hour}, e {minute} minuti?"
+    time_message = f"Ore {hour}, e {minute} minuti"
 
 tts = gTTS(time_message, lang='it', slow=False)
 tts.save("time_announcement.mp3")
