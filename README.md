@@ -1,6 +1,5 @@
 # segnale_orario_rai
-Segnale orario RAI 
-tentativo di riproduzione con Python, senza pretese :)
+Segnale orario RAI - tentativo di riproduzione con Python, senza pretese :)
 
 Da Wikipedia:
 Nelle trasmissioni radio della Rai il segnale orario è costituito da una serie di impulsi sonori preceduta da una sequenza di toni audio a variazione di frequenza contenenti varie informazioni sulla data, l'ora, eventuale ora estiva ed altro. La sequenza di codici che precede la lettura dell'ora esatta è un segnale orario codificato Segnale orario Rai codificato (SRC) che viene generato dalla Rai stessa ed è utilizzato per diffondere capillarmente in tempo reale in Italia la scala di tempo nazionale UTC. Questo segnale viene generato ogni minuto partendo da uno strumento atomico (al cesio) nella sede Rai di Roma. Dalla sede stessa il segnale di tempo viene quindi trasmesso quando è ritenuto opportuno (solitamente ogni ora o alla mezz'ora o prima dei giornali radio al minuto 45, salvo eccezioni soprattutto in concomitanza con radiocronache dirette di eventi sportivi o di avvenimenti di grande importanza).
